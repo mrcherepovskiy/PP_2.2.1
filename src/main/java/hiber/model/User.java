@@ -94,6 +94,21 @@ public class User {
 
    @Override
    public String toString() {
-      return firstName + " " + lastName + ": " + email;
+      return new StringBuilder()
+              .append("Id = ")
+              .append(getId())
+              .append(" ")
+              .append("First Name = ")
+              .append(getFirstName())
+              .append(" ")
+              .append("Last Name = ")
+              .append(getLastName())
+              .append(" ")
+              .append("Email = ")
+              .append(getEmail())
+              .append(" ")
+              .append("Car = ")
+              .append(getCar())
+              .toString();
    }
 }

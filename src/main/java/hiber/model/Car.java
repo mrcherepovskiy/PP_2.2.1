@@ -78,6 +78,9 @@ public class Car {
 
     @Override
     public String toString() {
-        return model + " " + series;
+        return new StringBuilder()
+                .append("Model: ")
+                .append(this.model)
+                .append(": ").append(this.series).toString();
     }
 }
